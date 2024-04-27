@@ -1,10 +1,10 @@
-package Algoritmos;
+package Algoritmos.ArvoreBinaria;
 
 public class ArvoreBinaria {
 
     public static void main(String[] args) {
-        int[] lista = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int item = 2;
+        int[] lista = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17};
+        int item = 15;
         int resultado = pesquisaBinaria(lista, item);
 
         if (resultado != -1) {
@@ -16,7 +16,7 @@ public class ArvoreBinaria {
 
     public static int pesquisaBinaria(int[] lista, int item) {
         int baixo = 0;
-        int alto = lista.length - 1;
+        int alto = lista.length;
 
         while (baixo <= alto) {
             int meio = (baixo + alto) / 2;
